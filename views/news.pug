@@ -1,0 +1,15 @@
+h3 Trending News
+div#newsBoard(style=`background-image: url(${fetchedNews[0].imgUrl})`)
+    #newsHeading 
+        #newsHeadLine
+            | #{fetchedNews[0].title}
+        a#articleLink(href=`${fetchedNews[0].webUrl}`)  Click here to read more....
+
+#responsiveSideBar 
+    <i class="fas fa-caret-left"></i>
+ul#newsList
+    li#title 
+        p Trending News
+    each news in fetchedNews
+        li.items
+            p(onclick=`loadNewsBoard('${news.webUrl}','${news.imgUrl}','${news.title}')`) #{news.title}

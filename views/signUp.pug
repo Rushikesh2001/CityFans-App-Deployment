@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link(rel="stylesheet" href="./styles/signUp.css")
+    link(rel="stylesheet", href="./styles/mobile/signUp.css", media="screen and (min-width:320px) and (max-width:425px)")
+    link(rel="stylesheet", href="./styles/tablet/signUp.css", media="screen and (min-width:426px) and (max-width:768px)")
+    link(href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&family=Lora&display=swap" rel="stylesheet")
+    <title>CityFans | Quickfire Quiz</title>
+  </head>
+  <body>
+    <section id="container">
+      <div id="formHeading"><h1>Sign Up</h1></div>
+      <form id="signup" action="/verify" method="post" onsubmit="isDetailValid(event)">
+        <label for="mail">Email Id</label>
+        <input type="email" name="mail" id="uemail" required/>
+        <div id="mailError">
+          | * Enter a valid email
+        </div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" onchange="fnPwdValidate(event)" required />
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="cpassword" onchange="fnPwdValidate(event)" required />
+        <div id="error">
+            <div id="errMsg">
+              <p>* atleast 1 uppercase character</p>
+              <p>* atleast 1 lowercase character</p>
+              <p>* atleast 1 special character</p>
+              <p>* atleast 1 numeric character</p>
+              <p>* atleast 8 characters long</p>
+            </div>
+        </div>
+        <div id="matchError">
+          | * Both password should match
+        </div>
+        <input type="submit" value="Sign Up"/>
+        <div id="existingUser">
+          | Already have a account?<a href="/login">Sign in</a>
+        </div>
+      </form>
+      if responseMsg 
+          #signUpError #{responseMsg.msg}
+    </section>
+  </body>
+  script(src="scripts/signUp.js") 
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link(rel="stylesheet" href="styles/header.css")
+    link(rel="stylesheet" href="styles/footer.css")
+    link(rel="stylesheet" href="styles/quiz.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/quiz.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/footer.css")
+    link(href="https://fonts.googleapis.com/css2?family=Raleway&family=Kenia&family=Roboto&display=swap" rel="stylesheet")
+    <title>Quiz</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p>CityFans</p>
+        <ul id="menu">
+          <li class="listItems">
+            <a href="/" target="_blank">Home</a>
+          </li>
+          <li class="listItems">
+            <a href="/players" target="_blank">Players</a>
+          </li>
+          <li class="listItems">
+            <a href="/journey" target="_blank">Journey</a>
+          </li>
+          <li class="listItems">
+            a(href='/quiz') Quickfire Quiz
+          </li>
+        </ul>
+        i(onclick="showMobileMenu()" class="fas fa-bars")
+        if (accountId[0].isAdmin) 
+          a(href="/addNews", target="_blank", id="news") Add News
+        <a id="logout" href="/logout" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+      </nav>
+    </header>
+    <section id="dashboardContainer">
+      <div id="heading">
+        <h1>Welcome to</h1>
+        <span>Quickfire Quiz</span>
+      </div>
+      <div id="dashboard">
+        <ul id="titleContainer">
+          <li id="quiz" class="title titleActive" onclick="loadContent(event)">
+            | All Quiz
+          </li>
+          <li id="result" class="title" onclick="loadContent(event)">
+            | Results
+          </li>
+        </ul> 
+        <table id="dashboardContent">
+          <thead>
+            <tr id="headRow">
+              <th>Sr.no</th>
+              <th class="quizName" colspan="10">Quiz name</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            each quiz,index in quizdetail
+              tr.rows
+                td #{index+1}
+                td(class="quizName" colspan="10")
+                  div(onclick=`loadQuiz(${index})`)
+                    | #{quiz.name}
+                td #{quiz.date}
+          </tbody>
+        </table>
+        if (accountId[0].quiz)
+          - var results = accountId[0].quiz.reverse();
+          <table id="quizResult">
+            <thead>
+              <tr id="resultTitleRow">
+                <th class="userMail" colspan="5">User Id</th>
+                <th>Quiz</th>
+                <th>Score</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              each result in results
+                tr.resultsRow
+                    td(class="userMail" colspan="5")
+                      | #{accountId[0].email}
+                    td #{result.name}
+                    td #{result.score}
+                    td #{result.date}
+            </tbody>
+          </table>
+        else 
+          #noData 
+            h1 No data found - Refresh to see results
+        <div id="quizContainer">
+          #mask
+            #confirm 
+              h3 Are you sure ?
+              #dialogControls
+                button#proceed(onclick =`submitQuiz('${accountId[0].email}')`) Yes 
+                button(id="cancel" onclick="fnCancelSubmission()") No
+            #scoreDialog 
+              p#score
+              #controls 
+                button#ok(onclick="showAns()") Ok   
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="main-footer">
+        <div class="logo">
+          <a href="/">
+            <img src="images/Manchester_City_FC_badge.svg.png"  alt="Manchester City Logo"/>
+          </a>
+        </div>
+        <hr />
+        <ul>
+          <li class="links"><a href="/" target="_blank">Home</a></li>
+          <li class="links"><a href="/players" target="_blank">Players</a></li>
+          <li class="links"><a href="/journey" target="_blank">Journey</a></li>
+          <li class="links"><a href="/quiz">Quickfire Quiz</a></li>
+        </ul>
+        <hr />
+        <div class="socialMedia">
+          <p>Follow Man City at</p>
+          <div class="socialMedia-icons">
+            <div class="icons">
+              <a href="https://twitter.com/ManCity" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/mancity/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.facebook.com/mancity/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2023 CityFans</div>
+    </footer>
+  </body>
+  script(src="./scripts/quiz.js")
+  script(src="libs/fontAwesome.js")
+</html>

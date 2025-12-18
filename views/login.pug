@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link(rel="stylesheet" href="./styles/login.css")
+    link(rel="stylesheet" media="screen and (min-width:320px) and (max-width:425px)" href="./styles/mobile/login.css")
+    link(rel="stylesheet" media="screen and (min-width:426px) and (max-width:768px)" href="./styles/tablet/login.css")
+    link(href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&family=Lora&display=swap" rel="stylesheet")
+    <title>CityFans | Quickfire Quiz</title>
+  </head>
+  <body>
+    <section id="registration">
+      <div id="formHeading"><h1>Login to Quickfire Quiz</h1></div>
+      <form id="login" action="/session" method="post">
+        <label for="mail">Email Id</label>
+        <input type="email" name="mail" id="uemail" required/>
+        <div id="label">
+          <label for="password">Password</label>
+          <a href="/forgotPassword">Forgot password?</a>
+        </div>
+        <input type="password" name="password" id="password" required/>
+        <input type="submit" value="Sign in" />
+        <div id="newUser">New to Quickfire Quiz?<a href="/signUp">Sign up</a></div>
+      </form>
+      if responseMsg 
+        #loginError #{responseMsg.msg}
+    </section>
+  </body>
+</html>

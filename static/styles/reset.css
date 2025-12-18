@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/starfall.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+  display: flex;
+  height: 329px;
+  width: fit-content;
+  border: 1px solid none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: 56px auto;
+}
+
+#heading {
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid none;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: red;
+  text-shadow: 0px 1px white;
+  margin-bottom: 35px;
+}
+
+#message {
+  display: flex;
+  height: 25px;
+  border: 1px solid none;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 14px 0 10px 0;
+  font-family: "Noto Serif", serif;
+  color: aliceblue;
+}
+
+#login {
+  display: flex;
+  height: 25px;
+  width: fit-content;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid none;
+  margin-top: 25px;
+}
+
+#login a {
+  text-decoration: none;
+  color: #1d96bd;
+}
+
+#login a:hover {
+  text-decoration: underline;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 250px;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 41px;
+  margin: 122px auto;
+}
+
+#formContainer h1 {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 25px;
+  color: #2b8bf1;
+  text-shadow: 0px 1px white;
+  font-family: sans-serif;
+}
+
+#formContainer label {
+  font-size: 17px;
+  color: #a4bfdb;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+#formContainer input {
+  height: 20px;
+  width: 200px;
+  border-style: unset;
+  border: 1px solid #7272e5;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+#formContainer input:focus-visible {
+  outline: #7272e5 auto 2px;
+}
+
+#formContainer button {
+  display: flex;
+  height: 35px;
+  width: 146px;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  color: grey;
+  margin: 8px auto;
+  cursor: pointer;
+}
+
+#formContainer button:hover {
+  background-color: #282891;
+  color: white;
+}
+
+#matchError {
+  display: none;
+  width: 201px;
+  align-items: center;
+  border: 1px solid #67bbbb;
+  border-radius: 4px;
+  padding: 0 5px;
+  background-color: #f0f8ff8f;
+  color: red;
+  margin-bottom: 10px;
+}
+
+#error {
+  display: none;
+  height: fit-content;
+  width: 196px;
+  border: 1px solid #67bbbb;
+  border-radius: 4px;
+  /* align-items: center; */
+  /* justify-content: start; */
+  padding: 0 10px;
+  color: red;
+  background-color: #f0f8ff8f;
+  font-size: 16px;
+  /* margin: 0 auto; */
+  flex-direction: column;
+  margin-bottom: 10px;
+}

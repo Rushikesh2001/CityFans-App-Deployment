@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link(rel="stylesheet" href="styles/reset.css")
+    link(rel="stylesheet" href="styles/mobile/reset.css" media="screen and (min-width:320px) and (max-width:425px)")
+    link(href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&family=Noto+Serif&display=swap" rel="stylesheet")
+    <title>CityFans</title>
+  </head>
+  <body>
+    if (message)
+        <div id="container">
+            <div id="heading">
+                h1 #{message.heading}
+            </div>
+            p#message #{message.msg}
+            <div id="login">
+                <a href="/login">Go back to login</a>
+            </div>
+        </div>
+    else
+        <div id="formContainer">
+          <h1>Reset Password</h1> 
+          <label for="pwd">New Password:</label>
+          <input type="password", name="pwd">
+          <label for="cpwd">Confirm Password:</label>
+          <input type="password", name="cpwd">
+          <div id="error">
+            <div id="errMsg">
+              <p>* atleast 1 uppercase character</p>
+              <p>* atleast 1 lowercase character</p>
+              <p>* atleast 1 special character</p>
+              <p>* atleast 1 numeric character</p>
+              <p>* atleast 8 characters long</p>
+            </div>
+          </div>
+          <div id="matchError">
+            | * Both password should match
+          </div> 
+          button(type="submit" onclick=`fnChangePassword('${mail}','${id}')`) Reset Password
+        </div>
+
+
+  </body>
+  script(src="scripts/reset.js")
+  script(src="libs/fontAwesome.js")
+</html>

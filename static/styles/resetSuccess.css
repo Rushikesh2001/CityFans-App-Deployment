@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/starfall.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+  display: flex;
+  height: 329px;
+  width: fit-content;
+  border: 1px solid none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: 56px auto;
+}
+
+#heading {
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid none;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: red;
+  text-shadow: 0px 1px white;
+  margin-bottom: 35px;
+}
+
+#message {
+  display: flex;
+  height: 25px;
+  border: 1px solid none;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 14px 0 10px 0;
+  font-family: "Noto Serif", serif;
+  color: aliceblue;
+}
+
+#login {
+  display: flex;
+  height: 25px;
+  width: fit-content;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid none;
+  margin-top: 25px;
+}
+
+#login a {
+  text-decoration: none;
+  color: #1d96bd;
+}
+
+#login a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,109 @@
+.goals::before {
+  background-size: cover;
+  background-position: center 0px;
+}
+
+.goals iframe {
+  opacity: 1;
+  width: 95%;
+}
+
+.goals .heading {
+  width: 250px;
+}
+
+.stats {
+  padding: 0;
+  display: flex;
+}
+
+#seasonStats {
+  display: none;
+}
+
+#plRecords {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+  align-items: center;
+}
+
+#profilePic {
+  border-radius: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 276px;
+  background-size: 97%;
+  font-size: 37px;
+  font-weight: bold;
+  align-items: end;
+  color: #090973;
+  background-color: #7d7def;
+  border: 1px solid #7d7def;
+  z-index: 0;
+  position: static;
+}
+
+#profilePic::before {
+  content: "Erling Haaland";
+}
+
+#backPic {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  background: transparent;
+}
+
+#logo {
+  border-radius: 0;
+  background: none;
+  border: 0;
+}
+
+#flag {
+  border-radius: 0;
+  background: none;
+  border: 0;
+}
+
+#logo,
+#flag {
+  width: 35%;
+}
+
+#about,
+#careerStats {
+  width: 100%;
+}
+
+#careerStats ul {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.title {
+  margin-left: 15px;
+}
+
+#careerStats ul .values {
+  width: 80%;
+  box-sizing: border-box;
+  margin: 5px 0;
+  height: fit-content;
+}
+
+#careerStats ul .years {
+  width: 80%;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
+
+#attackStats {
+  display: none;
+}
+
+#teamPlayStats {
+  display: none;
+}

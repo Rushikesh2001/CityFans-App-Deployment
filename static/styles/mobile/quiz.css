@@ -1,0 +1,76 @@
+#heading {
+  font-size: 31px;
+  flex-direction: column;
+}
+
+#titleContainer {
+  height: 45px;
+  padding: 0 25px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+#headRow th {
+  width: 60px;
+  font-size: 18px;
+}
+
+.rows td {
+  width: 60px;
+  font-size: 15px;
+}
+
+#quizContainer {
+  display: flex;
+  padding: 20px 5px;
+}
+
+.questionBox {
+  padding: 15px 5px;
+}
+
+.question {
+  font-size: 18px;
+}
+
+.options {
+  width: 100%;
+  max-width: 300px;
+}
+
+.optionsBox {
+  height: fit-content;
+}
+
+.optionLabel {
+  font-size: 16px;
+}
+
+.answers {
+  font-size: 16px;
+}
+
+#quizResult {
+  width: 100%;
+}
+
+#resultTitleRow th {
+  width: 60px;
+  font-size: 18px;
+}
+
+#resultTitleRow th:nth-child(1) {
+  width: 43%;
+}
+
+.resultsRow td {
+  width: 60px;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.userMail {
+  padding: 0 5px;
+}

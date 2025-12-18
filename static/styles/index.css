@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Content  */
+.latestNews {
+  display: flex;
+  height: 578px;
+  width: 100%;
+  flex-direction: row;
+  border: 1px solid none;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.contentBox {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: 1px solid none;
+  align-items: end;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.latestNews .contentBox:nth-child(1) {
+  background-image: url("../images/citySupporters_4K.jpg");
+  background-size: cover;
+  background-position: center -100px;
+  background-repeat: no-repeat;
+}
+
+.latestNews .contentBox:nth-child(2) {
+  left: 100%;
+  background-image: url("https://www.thesun.co.uk/wp-content/uploads/2023/06/ataturk-olympic-stadium-manchester-city-824245238.jpg");
+  background-size: cover;
+  background-position: center -245px;
+  background-repeat: no-repeat;
+}
+
+.latestNews .contentBox:nth-child(3) {
+  left: 100%;
+  background-image: url("../images/faCup_4K.jpg");
+  background-size: cover;
+  background-position: center -181px;
+  background-repeat: no-repeat;
+}
+
+.latestNews .contentBox:nth-child(4) {
+  left: 100%;
+  background-image: url("../images/2023_Champions_of_England.png");
+  background-size: cover;
+  background-position: center -81px;
+  background-repeat: no-repeat;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.content {
+  display: flex;
+  height: 132px;
+  width: 385px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid none;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 4px 3px #2f1695;
+  font-family: system-ui;
+}
+
+/* Appreciation section  */
+#appreciation {
+  display: flex;
+  height: 138px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  background-color: #0e0eb1;
+  justify-content: center;
+}
+
+#appreciation img {
+  height: 119px;
+  width: 150px;
+}
+
+#appreciation h2 {
+  font-size: 50px;
+  color: #a3d2ef;
+  margin-left: 21px;
+  text-shadow: -2px 1px 6px #c3a40c;
+  font-family: "Playfair Display", serif;
+}
+
+#appreciation #quizLink {
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  border: 1px solid none;
+  color: chartreuse;
+  align-items: center;
+  font-size: 19px;
+  font-family: Roboto, sans-serif;
+  margin-left: 28px;
+}
+
+#appreciation #quizLink a {
+  text-decoration: none;
+  color: #b7bb93;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#appreciation #quizLink a:hover {
+  color: aliceblue;
+}
+
+/* News section  */
+
+#news {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding: 20px;
+}
+
+#news h3 {
+  display: none;
+}
+
+#news #responsiveSideBar {
+  display: none;
+}
+
+#newsBoard {
+  display: flex;
+  height: 447px;
+  width: 799px;
+  border: 1px solid red;
+  position: relative;
+  /* margin-left: -5px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#newsHeading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  border: 1px solid none;
+  background-color: #a52a909e;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#newsHeadLine {
+  color: white;
+  font-size: 27px;
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Roboto Mono", monospace;
+}
+
+#articleLink {
+  position: absolute;
+  bottom: 7px;
+  right: 23px;
+  text-decoration: none;
+  color: #59dd30;
+  font-size: 17px;
+}
+
+#articleLink:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#newsList {
+  display: flex;
+  height: 415px;
+  width: 454px;
+  border: 1px solid #bbb2b2;
+  border-radius: 8px;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-left: 35px;
+  position: absolute;
+  right: 50px;
+}
+
+#newsList #title {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid #e7d9d9;
+  border-top: 3px solid yellow;
+  list-style: none;
+  background-color: #f9f9f9;
+}
+
+#newsList #title p {
+  display: flex;
+  border-right: 1px solid wheat;
+  height: 45px;
+  width: 158px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+#newsList .items {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid #e7d9d9;
+  list-style: none;
+  padding: 17px 10px;
+}
+
+#newsList .items p {
+  color: #8148b7;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+#newsList .items p:hover {
+  text-decoration: underline;
+  text-decoration-color: #3232ac;
+}
+
+/* About section  */
+
+.about {
+  display: flex;
+  height: 1027px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  background-image: url("../images/stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center -351px;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  /* opacity: 0.8; */
+}
+
+#aboutTitle {
+  display: flex;
+  height: 30px;
+  width: fit-content;
+  margin-bottom: 20px;
+  color: #527e38;
+  border: 1px solid none;
+  font-size: 27px;
+  font-family: monospace;
+}
+
+.info {
+  display: flex;
+  height: 227px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  background-color: #ffffff;
+  color: #2b4244;
+  font-size: 17px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  flex-direction: column;
+  top: 285px;
+  position: absolute;
+}
+
+.info p {
+  text-align: center;
+  font-family: none;
+  line-height: 30px;
+  width: 81%;
+}
+
+/* Player of the Season section  */
+
+.playerOfTheSeason {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid none;
+  flex-direction: row;
+  padding: 30px 20px;
+  background-color: #add8e68f;
+}
+
+.pos {
+  display: flex;
+  height: 439px;
+  width: 700px;
+  align-items: flex-start;
+  border: 1px solid none;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: #2f0359;
+  position: relative;
+  padding: 15px 0px;
+}
+
+.pos h1 {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.pos h3 {
+  color: #566873;
+  font-size: 20px;
+  margin: 15px 0px;
+  font-family: monospace;
+}
+
+.pos p {
+  display: flex;
+  text-align: justify;
+  border: 1px solid none;
+  height: fit-content;
+  width: 555px;
+  line-height: 24px;
+  margin: 5px 0px;
+  color: #2330dd;
+}
+
+.pos a {
+  display: flex;
+  border: 1px solid none;
+  font-family: monospace;
+  text-decoration: none;
+  color: #996e6e;
+  margin-top: 8px;
+}
+
+.pos a:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+
+.posImage {
+  display: flex;
+  height: 400px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid none;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 70px;
+}
+
+.posImage::before {
+  content: "";
+  background-image: url("../images/erling_haaland_pos.jpeg");
+  background-repeat: no-repeat;
+  background-position: 0px -15px;
+  border-radius: 20px;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

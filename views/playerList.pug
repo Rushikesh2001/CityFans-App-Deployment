@@ -1,0 +1,178 @@
+
+div.playerCategory#forward
+    .title Forwards
+    ul.players
+        each player in playerList 
+            if `${player.position}` == "Forward"
+                li.player 
+                    .coverPic 
+                        img(src=`${player.playerImg}` alt=`${player.name}`)
+                        .number #{player.number}
+                        .flag(style=`background-image:url(${player.flag})` title = `${player.nationality}`)
+                    .name #{player.name}
+                    .playerInfo 
+                        .stats
+                            .statTitle PL Career 
+                            ul
+                                li.items 
+                                    .itemKey Appearences
+                                    .itemValue #{player.plcareer.games}
+                                li.items 
+                                    .itemKey Goals
+                                    .itemValue #{player.plcareer.goals}
+                                li.items 
+                                    .itemKey Assists
+                                    .itemValue #{player.plcareer.assists}
+                        .social 
+                            if (player.social)  
+                                .socialTitle Follow #{player.name} at
+                                .media
+                                    each account in Object.keys(player.social)
+                                        if account == "facebook"
+                                            .mediaBox
+                                                a(href=`${player.social.facebook}`)
+                                                    <i class="fab fa-facebook-f"></i>
+                                        else if account == "twitter"
+                                            .mediaBox
+                                                a(href=`${player.social.twitter}`)
+                                                    <i class="fab fa-twitter"></i>
+                                        else if account == "instagram"
+                                            .mediaBox
+                                                a(href=`${player.social.instagram}`)
+                                                    <i class="fab fa-instagram"></i>
+
+                                
+
+
+div.playerCategory#midfield
+    .title Midfields
+    ul.players
+        each player in playerList 
+            if `${player.position}` == "Midfield"
+                li.player 
+                    .coverPic 
+                        img(src=`${player.playerImg}` alt=`${player.name}`)
+                        .number #{player.number}
+                        .flag(style=`background-image:url(${player.flag})` title = `${player.nationality}`)
+                    .name #{player.name}
+                    .playerInfo 
+                        .stats
+                            .statTitle PL Career 
+                            ul
+                                li.items 
+                                    .itemKey Appearences
+                                    .itemValue #{player.plcareer.games}
+                                li.items 
+                                    .itemKey Goals
+                                    .itemValue #{player.plcareer.goals}
+                                li.items 
+                                    .itemKey Assists
+                                    .itemValue #{player.plcareer.assists}
+                        .social 
+                            if (player.social)  
+                                .socialTitle Follow #{player.name} at
+                                .media
+                                    each account in Object.keys(player.social)
+                                        if account == "facebook"
+                                            .mediaBox
+                                                a(href=`${player.social.facebook}`)
+                                                    <i class="fab fa-facebook-f"></i>
+                                        else if account == "twitter"
+                                            .mediaBox
+                                                a(href=`${player.social.twitter}`)
+                                                    <i class="fab fa-twitter"></i>
+                                        else if account == "instagram"
+                                            .mediaBox
+                                                a(href=`${player.social.instagram}`)
+                                                    <i class="fab fa-instagram"></i>
+
+div.playerCategory#defender
+    .title Defenders
+    ul.players
+        each player in playerList 
+            if `${player.position}` == "Defender"
+                li.player  
+                    .coverPic 
+                        img(src=`${player.playerImg}` alt=`${player.name}`)
+                        .number #{player.number}
+                        .flag(style=`background-image:url(${player.flag})` title = `${player.nationality}`)
+                    .name #{player.name}
+                    .playerInfo 
+                        .stats
+                            .statTitle PL Career 
+                            ul
+                                li.items 
+                                    .itemKey Appearences
+                                    .itemValue #{player.plcareer.games}
+                                li.items 
+                                    .itemKey Goals
+                                    .itemValue #{player.plcareer.goals}
+                                li.items 
+                                    .itemKey Assists
+                                    .itemValue #{player.plcareer.assists}
+                                li.items 
+                                    .itemKey Cleansheets
+                                    .itemValue #{player.plcareer.cleansheets}
+                        .social 
+                            if (player.social)  
+                                .socialTitle Follow #{player.name} at
+                                .media
+                                    each account in Object.keys(player.social)
+                                        if account == "facebook"
+                                            .mediaBox
+                                                a(href=`${player.social.facebook}`)
+                                                    <i class="fab fa-facebook-f"></i>
+                                        else if account == "twitter"
+                                            .mediaBox
+                                                a(href=`${player.social.twitter}`)
+                                                    <i class="fab fa-twitter"></i>
+                                        else if account == "instagram"
+                                            .mediaBox
+                                                a(href=`${player.social.instagram}`)
+                                                    <i class="fab fa-instagram"></i>
+ 
+div.playerCategory#goalkeeper
+    .title Goalkeepers
+    ul.players
+        each player in playerList 
+            if `${player.position}` == "Goalkeeper"
+                li.player  
+                    .coverPic 
+                        img(src=`${player.playerImg}` alt=`${player.name}`)
+                        .number #{player.number}
+                        .flag(style = `background-image: url(${player.flag})` title = `${player.nationality}`)
+                    .name #{player.name}
+                    .playerInfo 
+                        .stats
+                            .statTitle PL Career 
+                            ul
+                                li.items 
+                                    .itemKey Appearences
+                                    .itemValue #{player.plcareer.games}
+                                li.items 
+                                    .itemKey Cleansheets
+                                    .itemValue #{player.plcareer.cleansheets}
+                                li.items 
+                                    .itemKey Goals
+                                    .itemValue #{player.plcareer.goals}
+                                li.items 
+                                    .itemKey Assists
+                                    .itemValue #{player.plcareer.assists}
+                        .social 
+                            if (player.social)  
+                                .socialTitle Follow #{player.name} at
+                                .media
+                                    each account in Object.keys(player.social)
+                                        if account == "facebook"
+                                            .mediaBox
+                                                a(href=`${player.social.facebook}`)
+                                                    <i class="fab fa-facebook-f"></i>
+                                        else if account == "twitter"
+                                            .mediaBox
+                                                a(href=`${player.social.twitter}`)
+                                                    <i class="fab fa-twitter"></i>
+                                        else if account == "instagram"
+                                            .mediaBox
+                                                a(href=`${player.social.instagram}`)
+                                                    <i class="fab fa-instagram"></i>
+

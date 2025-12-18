@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+
+#formContainer {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 84px 5px;
+  box-sizing: border-box;
+  border: none;
+}
+
+#error {
+  background-color: #f0f8ffd1;
+}
+
+#matchError {
+  background-color: #f0f8ffd1;
+}

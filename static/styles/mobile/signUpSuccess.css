@@ -1,0 +1,14 @@
+#container {
+  width: 100%;
+  padding: 0 5px;
+  height: fit-content;
+}
+
+#heading {
+  height: fit-content;
+  font-size: 14px;
+}
+
+#message {
+  margin: 26px 0 20px 0;
+}

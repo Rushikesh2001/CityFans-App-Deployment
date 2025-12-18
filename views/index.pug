@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man City Fan Club</title>
+    link(rel="stylesheet" href="./styles/index.css")
+    link(rel="stylesheet" href="./styles/header.css")
+    link(rel="stylesheet" href="./styles/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/index.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/index.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/footer.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Playfair+Display:ital,wght@1,600&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet")
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p>CityFans</p>
+        <ul id="menu">
+          <li class="listItems">
+            <a href="/">Home</a>
+          </li>
+          <li class="listItems">
+            <a href="/players">Players</a>
+          </li>
+          <li class="listItems">
+            <a href="/journey">Journey</a>
+          </li>
+          <li class="listItems">
+            <a href="/quiz">Quickfire Quiz</a>
+          </li>
+        </ul>
+        i(onclick="showMobileMenu()" class="fas fa-bars")
+      </nav>
+    </header>
+    <section class="latestNews">
+      <div class="contentBox">
+        <div class="content">Welcome to CityFans</div>
+      </div>
+      <div class="contentBox">
+        <div class="content">Champions Of Europe</div>
+      </div>
+      <div class="contentBox">
+        <div class="content">FA Cup Champions</div>
+      </div>
+      <div class="contentBox">
+        <div class="content">Champions Of England</div>
+      </div>
+    </section>
+    <div id="appreciation">
+      <img src="images/Manchester_City_FC_badge.svg.png" alt="Manchester City"/>
+      <h2>Treble Winners 2022/2023</h2>
+      <div id="quizLink">
+        |Take on the  
+        a(href="/quiz" target="_blank") 
+          | #TrebleQuiz
+      </div>
+    </div>
+    <section id="news">
+        include news.pug
+    </section>
+    <section class="about">
+      <div class="info">
+        <h3 id="aboutTitle">About CityFans</h3>
+        <p>
+          |CityFans is a fanbase website which supports English club Manchester City in their journey. This website highlights clubs recent achievements and trending news about its players and the club itself. It  also showcases club's incredible journey towards success from its 1st match to club's recent glory.  Also, City fans have a chance to test their knowledge about the club in our quick quizzes.
+        </p>
+      </div>
+    </section>
+
+    <section class="playerOfTheSeason">
+      <div class="pos">
+        <h1>Erling Haaland</h1>
+        <h3>EPL 2022-2023 Player Of The Season</h3>
+        <p>
+          | Haaland was named Premier League Player of the Season on May 27 after
+          | an incredible debut season in which he scored 36 goals in 35 games.
+          | Haaland has 36 goals in 35 games this season, breaking Andy Cole and
+          | Alan Shearer's previous record of 34 in a single Premier League
+          | season, which had stood for nearly three decades.
+        </p>
+        <p>
+          | Haaland's cumulative total of 52 goals in all competitions represented
+          | the biggest haul ever by a Premier League player. Haaland also set or
+          | equalled the Premier League records for fewest games needed to score
+          | 10, 15, 20, 25, 30 and 35 goals. As if to illustrate that fact, it was
+          | no coincidence that Haaland made 349 off-ball runs into the penalty
+          | area in the Premier League in 2022-23, the most of any player. And his
+          | total of 515 sprints in the Premier League in 2022-23 were also the
+          | most of any City player.
+        </p>
+        <a href="/pos" target="_blank">Click here to revisit the incredible season of Erling Haaland</a>
+      </div>
+      <!-- <i class="far fa-3x fa-play-circle"></i> -->
+      <div class="posImage"></div>
+    </section>
+    <footer>
+      <div class="main-footer">
+        <div class="logo">
+          <a href="/"><img src="images/Manchester_City_FC_badge.svg.png" alt="Manchester City Logo"/>
+          </a>
+        </div>
+        <hr />
+        <ul>
+          <li class="links"><a href="/">Home</a></li>
+          <li class="links"><a href="/players">Players</a></li>
+          <li class="links"><a href="/journey">Journey</a></li>
+          <li class="links"><a href="/quiz">Quickfire Quiz</a></li>
+        </ul>
+        <hr />
+        <div class="socialMedia">
+          <p>Follow Man City at</p>
+          <div class="socialMedia-icons">
+            <div class="icons">
+              <a href="https://twitter.com/ManCity"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/mancity/?hl=en"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.facebook.com/mancity/"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2023 CityFans</div>
+    </footer>
+    script(src="./scripts/index.js")
+    script(src="./libs/fontAwesome.js")
+  </body>
+</html>

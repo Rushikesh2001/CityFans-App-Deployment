@@ -1,0 +1,8 @@
+body {
+  height: 100vh;
+}
+
+#formContainer {
+  padding: 56px 0 56px 15px;
+  margin: 0 auto;
+}

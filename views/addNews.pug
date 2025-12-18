@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityFans | Admin</title>
+    link(rel="stylesheet" href="styles/header.css")
+    link(rel="stylesheet" href="styles/footer.css")
+    link(rel="stylesheet" href="styles/addNews.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/addNews.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/footer.css")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p>CityFans</p>
+        <ul id="menu">
+          <li class="listItems">
+            <a href="/">Home</a>
+          </li>
+          <li class="listItems">
+            <a href="/players">Players</a>
+          </li>
+          <li class="listItems">
+            <a href="/journey">Journey</a>
+          </li>
+          <li class="listItems">
+            <a href="/quiz">Quickfire Quiz</a>
+          </li>
+        </ul>
+        i(onclick="showMobileMenu()" class="fas fa-bars")
+      </nav>
+    </header>
+    <h1 id="formHeading">Add Latest News</h1>
+    <form action="/add/news" enctype="multipart/form-data" method="post">
+      <label for="title"><b>*</b> Title</label>
+      <input type="text" name="title" required />
+      <label for="webUrl"><b>*</b> Web Url</label>
+      <input type="text" name="webUrl" required />
+      <div id="chooseFile">
+        <p><b>*</b> Select an image</p>
+        <div id="openDialog">
+          <p id="fileName"></p>
+          <i class="fas fa-plus"></i>
+          <i id="deleteFile" class="fas fa-times"></i>
+        </div>
+        <div id="noFileSelected">Please select an image!</div>
+      </div>
+      input(type="file" id="fileElem" name="imageFile" style="display: none" required)
+      <div id="fileSelect">
+        <i id="closeDialog" class="fas fa-times"></i>
+        | Click to choose a file to upload
+        <p id="fileError">
+          | * File should be an image <br />
+          | * File size should be less than 1 Mb
+        </p>
+      </div>
+      <label for="description"><b>*</b> Description</label>
+      <textarea name="description" id="" cols="30" rows="10" required ></textarea>
+      input(type="submit" value="Add News")
+    </form>
+    if (message)
+      #msg #{message.msg}
+    
+
+    <footer>
+      <div class="main-footer">
+        <div class="logo">
+          <a href="/">
+            <img  src="images/Manchester_City_FC_badge.svg.png" alt="Manchester City Logo"/>
+          </a>
+        </div>
+        <hr />
+        <ul>
+          <li class="links"><a href="/">Home</a></li>
+          <li class="links"><a href="/players">Players</a></li>
+          <li class="links"><a href="/journey">Journey</a></li>
+          <li class="links"><a href="/quiz">Quickfire Quiz</a></li>
+        </ul>
+        <hr />
+        <div class="socialMedia">
+          <p>Follow Man City at</p>
+          <div class="socialMedia-icons">
+            <div class="icons">
+              <a href="https://twitter.com/ManCity" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/mancity/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.facebook.com/mancity/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2023 CityFans</div>
+    </footer>
+  </body>
+  script(src="scripts/addNews.js")
+  script(src="libs/fontAwesome.js")
+</html>

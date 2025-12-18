@@ -1,0 +1,25 @@
+#container {
+  width: 100%;
+  max-width: 310px;
+  padding: 24px 0 0 0;
+}
+
+#signup {
+  width: 100%;
+}
+
+#signUpError {
+  margin: 15px 0;
+}
+
+#error {
+  background-color: #eef5fbe3;
+}
+
+#matchError {
+  background-color: #eef5fbe3;
+}
+
+#mailError {
+  background-color: #eef5fbe3;
+}

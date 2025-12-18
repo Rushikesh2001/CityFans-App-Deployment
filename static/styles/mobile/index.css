@@ -1,0 +1,230 @@
+.latestNews {
+  height: 419px;
+  width: 100%;
+}
+
+.contentBox {
+  justify-content: center;
+}
+
+.content {
+  height: 30px;
+  width: fit-content;
+  font-size: 25px;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.latestNews .contentBox:nth-child(1) {
+  background-position: center 0px;
+}
+.latestNews .contentBox:nth-child(2) {
+  background-position: center 0px;
+}
+.latestNews .contentBox:nth-child(3) {
+  background-position: -154px 0px;
+}
+.latestNews .contentBox:nth-child(4) {
+  background-position: -133px 0px;
+}
+
+#appreciation {
+  flex-direction: column;
+  height: 182px;
+  width: 100%;
+}
+
+#appreciation img {
+  height: 67px;
+  width: 69px;
+}
+
+#appreciation h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+  text-shadow: -2px 1px 6px #fbd82a;
+}
+
+#appreciation #quizLink {
+  margin: 0;
+  font-size: 15px;
+}
+
+#appreciation #quizLink a {
+  text-decoration: underline;
+  text-decoration-color: lightyellow;
+}
+
+#news {
+  height: 645px;
+  width: 100%;
+  padding: 40px 5px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #717df9;
+}
+
+#news h3 {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: red;
+  /* font-family: 'Baloo Bhaijaan 2'; */
+}
+
+#newsBoard {
+  height: 233px;
+  width: 100%;
+}
+
+#newsHeading {
+  min-height: 50px;
+  height: fit-content;
+  width: 100%;
+  padding: 5px 5px;
+  flex-direction: column;
+}
+
+#newsHeadLine {
+  font-size: 12px;
+}
+
+#articleLink {
+  font-size: 11px;
+}
+
+#newsList {
+  height: 266px;
+  width: 90%;
+  position: relative;
+  right: 0;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+}
+
+#newsList #title {
+  height: 30px;
+}
+
+#newsList #title p {
+  height: 31px;
+  width: 120px;
+  font-size: 15px;
+}
+
+#newsList .items {
+  height: fit-content;
+  padding: 10px 7px;
+  background: white;
+}
+
+#newsList .items p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.about {
+  height: 506px;
+  width: 100%;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.about:before {
+  background-position: center;
+  background-size: cover;
+  background-image: none;
+  background: linear-gradient(#2f2727, #351e1e);
+}
+
+.info {
+  border: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 10px 18px;
+  background: transparent;
+  color: aliceblue;
+  position: relative;
+  justify-content: start;
+}
+
+#aboutTitle {
+  font-size: 28px;
+  color: #90ff01;
+  text-shadow: 1px 1px aliceblue;
+  font-weight: bolder;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+}
+
+.info p {
+  width: 100%;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.playerOfTheSeason {
+  width: 100%;
+  padding: 30px 10px;
+  height: fit-content;
+  background: transparent;
+  position: relative;
+  background-color: #2a4ca587;
+}
+
+.pos {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.pos h1 {
+  font-size: 38px;
+  color: #08195b;
+  text-shadow: -1px 1px 6px aliceblue;
+}
+
+.pos h3 {
+  font-size: 18px;
+  color: #beff00;
+}
+
+.pos p {
+  width: 100%;
+  color: white;
+}
+
+.pos a {
+  color: #ff0505;
+}
+
+.posImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: -1;
+}
+
+.posImage::before {
+  background-position: -146px 0px;
+  border-radius: 0;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.9;
+}

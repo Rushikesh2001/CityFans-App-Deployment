@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/starfall.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  height: 194px;
+  width: 340px;
+  border: 1px solid none;
+  align-items: start;
+  justify-content: center;
+  margin: 56px auto;
+  padding-left: 15px;
+}
+
+#formContainer h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 43px;
+  color: #2b8bf1;
+  text-shadow: 0px 1px white;
+  font-family: sans-serif;
+}
+
+#inpBox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #50a0e7;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+  margin-bottom: 28px;
+}
+
+#inpBox input {
+  height: 24px;
+  width: 211px;
+  margin-left: 10px;
+  border: 1px solid #e8edf1;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#formContainer button[type="submit"] {
+  display: flex;
+  height: 30px;
+  width: 196px;
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  color: grey;
+  margin: 0px auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#formContainer button[type="submit"]:hover {
+  background-color: #4425b1;
+  color: white;
+}
+
+#success {
+  display: none;
+  height: 200px;
+  width: 727px;
+  flex-direction: column;
+  border: 1px solid none;
+  margin: 56px auto;
+}
+
+#success h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 39px;
+  color: #2b8bf1;
+  text-shadow: 0px 1px white;
+  font-family: sans-serif;
+}
+
+#success p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 18px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+#success button {
+  display: flex;
+  height: 37px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid aliceblue;
+  background-color: transparent;
+  border-radius: 5px;
+  color: grey;
+  letter-spacing: 2px;
+  padding: 0 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#success button:hover {
+  background-color: #8f77e9;
+  color: red;
+}
+
+#error {
+  display: none;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #67bbbb;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  color: red;
+  background-color: #f0f8ff8f;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+#error i {
+  display: flex;
+  height: 25px;
+  width: 26px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#error i:hover {
+  border: 1px solid #605151;
+  border-radius: 50%;
+  background-color: #8d6d6dab;
+}

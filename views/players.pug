@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manchester City | Players</title>
+    link(rel="stylesheet" href="./styles/players.css")
+    link(rel="stylesheet" href="./styles/header.css")
+    link(rel="stylesheet" href="./styles/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/players.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 320px) and (max-width: 425px)", href="./styles/mobile/footer.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/header.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/players.css")
+    link(rel="stylesheet", media="screen and (min-width: 426px) and (max-width: 768px)", href="./styles/tablet/footer.css")
+    link(href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet")
+    //- include ../static/styles/players.css
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p>CityFans</p>
+        <ul id="menu">
+          <li class="listItems">
+            <a href="/">Home</a>
+          </li>
+          <li class="listItems">
+            <a href="/players">Players</a>
+          </li>
+          <li class="listItems">
+            <a href="/journey">Journey</a>
+          </li>
+          <li class="listItems">
+            <a href="/quiz">Quickfire Quiz</a>
+          </li>
+        </ul>
+        i(onclick="showMobileMenu()" class="fas fa-bars")
+      </nav>
+    </header>
+    <section id="pageHeader">
+      <h1>Players</h1>
+    </section>
+    
+    <section id="players">
+      include playerList.pug
+    </section>
+    
+    <footer>
+      <div class="main-footer">
+        <div class="logo">
+          <a href="/">
+            <img src="images/Manchester_City_FC_badge.svg.png"  alt="Manchester City Logo"/>
+          </a>
+        </div>
+        <hr />
+        <ul>
+          <li class="links"><a href="/">Home</a></li>
+          <li class="links"><a href="/players">Players</a></li>
+          <li class="links"><a href="/journey">Journey</a></li>
+          <li class="links"><a href="/quiz">Quickfire Quiz</a></li>
+        </ul>
+        <hr />
+        <div class="socialMedia">
+          <p>Follow Man City at</p>
+          <div class="socialMedia-icons">
+            <div class="icons">
+              <a href="https://twitter.com/ManCity" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/mancity/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="icons">
+              <a href="https://www.facebook.com/mancity/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2023 CityFans</div>
+    </footer>
+    script(src="./scripts/players.js")
+    script(src="libs/fontAwesome.js")
+  </body>
+</html>

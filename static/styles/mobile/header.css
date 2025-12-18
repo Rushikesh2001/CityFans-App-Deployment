@@ -1,0 +1,57 @@
+.navbar {
+  height: 55px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  overflow-x: clip;
+}
+
+.navbar p {
+  font-size: 22px;
+}
+
+.navbar ul {
+  border: 1px solid aliceblue;
+  height: 200px;
+  width: 184px;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  z-index: 1;
+  right: -186px;
+  background-color: #dfdcdcb5;
+  align-items: center;
+  padding: 0;
+  transition: transform 600ms 200ms ease;
+}
+
+.navbar > i {
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.listItems {
+  justify-content: start;
+  padding: 0;
+  height: 50px;
+  width: 155px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.listItems a {
+  color: #1a0a93;
+}
+
+#news {
+  right: 82px;
+  font-size: 17px;
+}
+
+#logout {
+  right: 50px;
+}

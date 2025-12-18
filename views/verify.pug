@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link(rel="stylesheet" href="./styles/verify.css")
+    link(rel="stylesheet", href="./styles/mobile/verify.css" media="screen and (min-width:320px) and (max-width:425px)")
+    link(href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&family=Noto+Serif&display=swap" rel="stylesheet")
+    <title>CityFans | Quickfire Quiz</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading">
+        <h1>Verification Mail has been sent</h1>
+      </div>
+      <p id="content">
+        | A verification mail has been sent to your mail id
+        span#email #{userEmail.email}
+      </p>
+      <p id="note">
+        <b>Note:</b>You need to verify your email in order to activate your account.
+      </p>
+      <p id="resendLink">
+        | Did not recieve verification email ?
+        a(href="/" onclick=`fnResendLink(event,'${userEmail.email}')`) Resend link
+      </p>
+    </div>
+  </body>
+  script(src="scripts/verify.js") 
+</html>

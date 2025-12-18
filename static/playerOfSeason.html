@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/playerOfSeason.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:320px) and (max-width:425px)"
+      href="./styles/mobile/playerOfSeason.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:320px) and (max-width:425px)"
+      href="./styles/mobile/header.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:320px) and (max-width:425px)"
+      href="./styles/mobile/footer.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:426px) and (max-width:768px)"
+      href="./styles/tablet/playerOfSeason.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:426px) and (max-width:768px)"
+      href="./styles/tablet/header.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:426px) and (max-width:768px)"
+      href="./styles/tablet/footer.css"
+    />
+
+    <title>Erling Haaland | Player of the Season</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p>CityFans</p>
+        <ul id="menu">
+          <li class="listItems">
+            <a href="/">Home</a>
+          </li>
+          <li class="listItems">
+            <a href="/players">Players</a>
+          </li>
+          <li class="listItems">
+            <a href="/journey">Journey</a>
+          </li>
+          <li class="listItems">
+            <a href="/quiz">Quickfire Quiz</a>
+          </li>
+        </ul>
+        <i onclick="showMobileMenu()" class="fas fa-bars"></i>
+      </nav>
+    </header>
+    <section class="goals">
+      <iframe
+        width="760"
+        height="415"
+        src="https://www.youtube.com/embed/udjBvKOSJcE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <div class="heading">2022 / 2023 Season Stats</div>
+    </section>
+    <section class="stats">
+      <div id="plRecords">
+        <div id="profilePic"></div>
+        <div id="backPic">
+          <div id="logo">
+            <img
+              src="images/Manchester_City_FC_badge.svg.png"
+              alt="Manchester City Logo"
+            />
+          </div>
+          <div id="flag">
+            <img
+              src="https://cdn.britannica.com/01/3101-004-506325BB/Flag-Norway.jpg"
+              alt="Norway Flag"
+            />
+          </div>
+        </div>
+        <div id="about">
+          <div class="title">About</div>
+          <ul>
+            <li class="items">Name: <span>Erling Braut Haaland</span></li>
+            <li class="items">Father: <span>Alfie Haaland</span></li>
+            <li class="items">Mother: <span>Gry Marita Braut</span></li>
+            <li class="items">Age: <span>21</span></li>
+            <li class="items">Previous Club: <span>Borussia Dortmund</span></li>
+            <li class="items">Current Club: <span>Manchester City</span></li>
+            <li class="items">Nationality: <span>Norway</span></li>
+          </ul>
+        </div>
+        <div id="careerStats">
+          <div class="title">Premier League Record</div>
+          <ul>
+            <li class="values">
+              <span class="name">Appearences</span>
+              <span class="value">50</span>
+            </li>
+            <li class="values">
+              <span class="name">Goals</span>
+              <span class="value">50</span>
+            </li>
+            <li class="values">
+              <span class="name">Assists</span>
+              <span class="value">12</span>
+            </li>
+          </ul>
+          <div class="title">Honours and Awards</div>
+          <ul>
+            <li class="values">
+              <span class="award">Golden Boot</span>
+              <span class="count">1</span>
+            </li>
+            <li class="years">
+              <span class="year">2022/23</span>
+            </li>
+            <li class="values">
+              <span class="award">Player of the Season</span>
+              <span class="count">1</span>
+            </li>
+            <li class="years">
+              <span class="year">2022/23</span>
+            </li>
+            <li class="values">
+              <span class="award">Young Player of the Season</span>
+              <span class="count">1</span>
+            </li>
+            <li class="years">
+              <span class="year">2022/23</span>
+            </li>
+            <li class="values">
+              <span class="award">Premier League Champion</span>
+              <span class="count">1</span>
+            </li>
+            <li class="years">
+              <span class="year">2022/23</span>
+            </li>
+            <li class="values">
+              <span class="award">Player of the Month</span>
+              <span class="count">2</span>
+            </li>
+            <li class="years">
+              <span class="year">August 2022</span>
+              <span class="year">April 2023</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="seasonStats">
+        <div class="statBox">
+          <div class="statValue">50</div>
+          <div class="statDesc">Appearences</div>
+        </div>
+        <div class="statBox">
+          <div class="statValue">50</div>
+          <div class="statDesc">Goals</div>
+        </div>
+        <div class="statBox">
+          <div class="statValue">12</div>
+          <div class="statDesc">Assists</div>
+        </div>
+        <div class="statBox">
+          <div class="statValue">15</div>
+          <div class="statDesc">Chances Created</div>
+        </div>
+      </div>
+      <div id="attackStats">
+        <div class="statTitle">Attack</div>
+        <ul class="matchStats">
+          <li class="val">
+            <div class="desc">Goals</div>
+            <div class="numbers">50</div>
+          </li>
+          <li class="val">
+            <div class="desc">Goals per match</div>
+            <div class="numbers">1.00</div>
+          </li>
+          <li class="val">
+            <div class="desc">Headed goals</div>
+            <div class="numbers">10</div>
+          </li>
+          <li class="val">
+            <div class="desc">Goals with right foot</div>
+            <div class="numbers">6</div>
+          </li>
+          <li class="val">
+            <div class="desc">Goals with left foot</div>
+            <div class="numbers">33</div>
+          </li>
+          <li class="val">
+            <div class="desc">Penalties scored</div>
+            <div class="numbers">10</div>
+          </li>
+          <li class="val">
+            <div class="desc">Freekicks scored</div>
+            <div class="numbers">0</div>
+          </li>
+          <li class="val">
+            <div class="desc">Shots</div>
+            <div class="numbers">181</div>
+          </li>
+          <li class="val">
+            <div class="desc">Shots on target</div>
+            <div class="numbers">91</div>
+          </li>
+          <li class="val">
+            <div class="desc">Shooting accuracy%</div>
+            <div class="numbers">50%</div>
+          </li>
+          <li class="val">
+            <div class="desc">Hit woodwork</div>
+            <div class="numbers">7</div>
+          </li>
+          <li class="val">
+            <div class="desc">Big chances missed</div>
+            <div class="numbers">45</div>
+          </li>
+        </ul>
+      </div>
+      <div id="teamPlayStats">
+        <div class="statTitle">Team play</div>
+        <ul class="matchStats">
+          <li class="val">
+            <div class="desc">Assists</div>
+            <div class="numbers">12</div>
+          </li>
+          <li class="val">
+            <div class="desc">Passes</div>
+            <div class="numbers">648</div>
+          </li>
+          <li class="val">
+            <div class="desc">Passes per match</div>
+            <div class="numbers">12.96</div>
+          </li>
+          <li class="val">
+            <div class="desc">Big chances created</div>
+            <div class="numbers">15</div>
+          </li>
+          <li class="val">
+            <div class="desc">Crosses</div>
+            <div class="numbers">16</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="main-footer">
+        <div class="logo">
+          <a href="/"
+            ><img
+              src="images/Manchester_City_FC_badge.svg.png"
+              alt="Manchester City Logo"
+            />
+          </a>
+        </div>
+        <hr />
+        <ul>
+          <li class="links"><a href="/">Home</a></li>
+          <li class="links"><a href="/players">Players</a></li>
+          <li class="links"><a href="/journey">Journey</a></li>
+          <li class="links"><a href="/quiz">Quickfire Quiz</a></li>
+        </ul>
+        <hr />
+        <div class="socialMedia">
+          <p>Follow Man City at</p>
+          <div class="socialMedia-icons">
+            <div class="icons">
+              <a href="https://twitter.com/ManCity" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a
+                href="https://www.youtube.com/channel/UCkzCjdRMrW2vXLx8mvPVLdQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/mancity/?hl=en" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.facebook.com/mancity/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2023 CityFans</div>
+    </footer>
+    <script src="./scripts/playerOfSeason.js"></script>
+    <script src="libs/fontAwesome.js"></script>
+  </body>
+</html>

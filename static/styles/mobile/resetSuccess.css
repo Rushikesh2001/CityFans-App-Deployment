@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 76px 10px;
+  height: fit-content;
+}
+
+#heading {
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+#message {
+  height: fit-content;
+}

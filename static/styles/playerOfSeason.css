@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Video section  */
+
+.goals {
+  display: flex;
+  height: 632px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid none;
+  position: relative;
+}
+
+.goals::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/goals.jpg");
+  background-size: 100%;
+  background-position: center -44px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.goals iframe {
+  opacity: 0.8;
+}
+
+.goals iframe:hover {
+  opacity: 1;
+}
+
+.heading {
+  display: flex;
+  color: #40174e;
+  height: 50px;
+  width: 307px;
+  border: 1px solid none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-family: system-ui;
+  font-size: 20px;
+  bottom: 0;
+  background-color: white;
+}
+
+/* Stats section  */
+
+.stats {
+  display: grid;
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 42px 10px 10px 10px;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "records stats stats"
+    " records attack teamPlay"
+    "records attack teamPlay";
+}
+
+#plRecords {
+  display: flex;
+  grid-area: records;
+  height: fit-content;
+  width: 435px;
+  border: 1px solid rgb(153 123 123);
+  position: relative;
+  border-radius: 20px;
+  flex-direction: column;
+  background-color: #eff0f596;
+  font-family: monospace;
+}
+
+#profilePic {
+  position: absolute;
+  display: flex;
+  height: 131px;
+  width: 135px;
+  border: 2px solid #1816a1;
+  border-bottom: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 111px;
+  top: -26px;
+  left: 147px;
+  background-color: #6344c7;
+  background-image: url("https://www.mancity.com/meta/media/e2lawnab/erling-haaland.png");
+  /* background-position: ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#backPic {
+  display: flex;
+  height: 127px;
+  width: 435px;
+  justify-content: space-between;
+  border: 1px solid none;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 127px;
+  width: 165px;
+  border-radius: 20px 0px 82px 0px;
+  border-bottom: 1px solid #1816a1;
+  border-right: 1px solid #1816a1;
+  border-left: 1px solid #9fbcdd;
+  background-color: #9fbcdd;
+}
+
+#logo img {
+  height: 93px;
+  width: 103px;
+}
+
+#flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 127px;
+  width: 168px;
+  border-radius: 0px 20px 0px 82px;
+  border-bottom: 1px solid #1816a1;
+  border-left: 1px solid #1816a1;
+  border-right: 1px solid #9fbcdd;
+  background-color: #9fbcdd;
+}
+
+#flag img {
+  height: 79px;
+  width: 98px;
+}
+
+#about {
+  display: flex;
+  height: 226px;
+  border: 1px solid none;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 25px;
+  color: #380769;
+  font-weight: bold;
+  margin-left: 39px;
+}
+
+#about ul {
+  display: flex;
+  height: 200px;
+  border: 1px solid none;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.items {
+  list-style: none;
+  margin: 5px 0px 5px 39px;
+  color: #35496f;
+  font-size: 15px;
+}
+
+.items span {
+  font-weight: bold;
+  color: #192057;
+}
+
+#careerStats {
+  display: flex;
+  height: fit-content;
+  border: 1px solid none;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+#careerStats ul {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  border: 1px solid none;
+  margin: 10px 0 25px 0;
+}
+
+#careerStats ul .values {
+  border-bottom: 1px solid rgb(238, 163, 163);
+  list-style: none;
+  margin: 5px 0px 5px 39px;
+  display: flex;
+  height: 25px;
+  width: 300px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.values .name {
+  font-size: 16px;
+  color: #5e5269;
+}
+
+.values .value {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.award,
+.count {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #51079b; */
+}
+
+.years {
+  border-bottom: 1px solid rgb(238, 163, 163);
+  list-style: none;
+  margin: 5px 0px 5px 39px;
+  display: flex;
+  height: fit-content;
+  min-height: 25px;
+  width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.year {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #706868;
+  letter-spacing: 3px;
+}
+
+#seasonStats {
+  display: flex;
+  grid-area: stats;
+  height: 243px;
+  width: 867px;
+  border: 1px solid none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.statBox {
+  display: flex;
+  height: 136px;
+  width: 198px;
+  border: 1px solid blue;
+  flex-direction: column;
+  background-color: rgb(11, 11, 88);
+  color: white;
+  font-family: monospace;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.statValue {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.statDesc {
+  font-size: 20px;
+}
+
+#attackStats {
+  display: flex;
+  grid-area: attack;
+  height: fit-content;
+  width: 422px;
+  border: 1px solid #afabab;
+  border-radius: 10px;
+  font-family: monospace;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teamPlayStats {
+  display: flex;
+  grid-area: teamPlay;
+  height: fit-content;
+  width: 422px;
+  border: 1px solid #afabab;
+  border-radius: 10px;
+  font-family: monospace;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statTitle {
+  display: flex;
+  height: 50px;
+  width: 420px;
+  border-top: 5px solid #a5ed12;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  color: #380769;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.matchStats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  border: 1px solid none;
+  /* padding: 10px 10px; */
+}
+
+.val {
+  display: flex;
+  height: 25px;
+  /* width: 380px; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 1px solid #afabab;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.numbers {
+  font-weight: bold;
+  font-size: 18px;
+  color: #11094b;
+}

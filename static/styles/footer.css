@@ -1,0 +1,117 @@
+/* Footer section  */
+
+footer {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #2d003de8;
+  align-items: center;
+}
+
+.main-footer {
+  display: flex;
+  height: 200px;
+  width: 1309px;
+  box-sizing: border-box;
+  flex-direction: row;
+  border: 1px solid none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 86px;
+  margin-right: 44px;
+}
+
+.main-footer img {
+  height: 123px;
+  width: 123px;
+}
+
+.main-footer hr {
+  height: 100px;
+}
+
+.main-footer ul {
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  border: 1px solid none;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid none;
+  margin: 0px 23px;
+}
+
+.links a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.socialMedia {
+  display: flex;
+  height: 100px;
+  width: 283px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid none;
+  margin-right: 35px;
+}
+
+.socialMedia-icons {
+  display: flex;
+  height: 50px;
+  width: 253px;
+  border: 1px solid none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socialMedia p {
+  color: lightblue;
+}
+
+.icons {
+  display: flex;
+  background-color: #1b0b20;
+  flex-direction: row;
+  height: 39px;
+  width: 43px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.icons a {
+  text-decoration: none;
+}
+.socialMedia-icons .fab {
+  font-size: 1.2em;
+  color: lightblue;
+}
+
+.copyright {
+  color: lightblue;
+}

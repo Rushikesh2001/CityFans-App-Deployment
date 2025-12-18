@@ -1,0 +1,29 @@
+#container {
+  width: 100%;
+  height: fit-content;
+}
+
+#heading {
+  height: fit-content;
+  font-size: 16px;
+  text-align: center;
+}
+
+#content {
+  width: 100%;
+  font-size: 15px;
+  flex-direction: column;
+  height: fit-content;
+}
+
+#note {
+  height: fit-content;
+  align-items: start;
+  text-align: justify;
+  /* padding: 0; */
+  margin-bottom: 10px;
+}
+
+#resendLink {
+  padding: 0 10px;
+}

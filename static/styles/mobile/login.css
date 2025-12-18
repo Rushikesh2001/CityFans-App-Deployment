@@ -1,0 +1,16 @@
+#registration {
+  width: 97%;
+  max-width: 315px;
+  padding: 50px 0;
+}
+
+#login {
+  width: 100%;
+}
+
+#loginError {
+  height: fit-content;
+  width: 100%;
+  max-width: 271px;
+  padding: 5px 15px;
+}

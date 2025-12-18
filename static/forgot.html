@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityFans</title>
+    <link rel="stylesheet" href="./styles/forgot.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:320px) and (max-width:425px)"
+      href="./styles/mobile/forgot.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:426px) and (max-width:768px)"
+      href="./styles/tablet/forgot.css"
+    />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>Reset Password</h1>
+      <div id="inpBox">
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" />
+      </div>
+      <button type="submit" onclick="fnCheckMail()">Send Reset Link</button>
+    </div>
+    <div id="success">
+      <h1>Reset Password</h1>
+      <p></p>
+      <button>Resend link</button>
+    </div>
+    <div id="error">
+      <p>Please enter correct email id</p>
+      <i class="fas fa-times" onclick="fnCross()"></i>
+    </div>
+  </body>
+  <script src="./libs/fontAwesome.js"></script>
+  <script src="./scripts/forgot.js"></script>
+</html>
