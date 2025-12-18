@@ -14,6 +14,9 @@ const app = express();
 //Declaring domain
 const appUrl = process.env.APP_URL;
 
+// Declaring port.
+const PORT = process.env.PORT || 3000;
+
 //Including the webservice
 const getNews = require("./routes/getNews.js");
 const getplayerDetails = require("./routes/getPlayerDetails.js");
@@ -220,7 +223,7 @@ app.get(
 //Securing endpoints
 
 //App is listening to request
-app.listen(80, () => {
+app.listen(PORT, () => {
   console.log("App is listening......");
   console.log(`Server is live at ${appUrl}`);
 });
