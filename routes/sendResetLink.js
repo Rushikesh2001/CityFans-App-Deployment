@@ -33,7 +33,6 @@ async function dbConnection(mail, uid) {
 //Defining smtp configuration settings
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
   secure: true,
   auth: {
     // TODO: replace `user` and `pass` values from <https://forwardemail.net>
